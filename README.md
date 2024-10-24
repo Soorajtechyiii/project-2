@@ -1,3 +1,3 @@
 # project-2
 Output page
-![Capture 3](https://github.com/user-attachments/assets/864f35b7-5a3f-4d23-95f7-a92b2b5eddcd)  
+![Capture 3](https://github.com/user-attachments/assets/aa5cf810-2b22-40c3-a95b-bae326a1f8e4)
