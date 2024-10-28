@@ -10,7 +10,7 @@ def getdata(request):
         text=request.POST.get('email')
         password=request.POST.get('psw')
         repeatpassword=request.POST.get('psw-repeat')
-        R= Register(text=text,psw=password,repeatpassword=repeatpassword)
+        R= Register(email=text,psw=password,repeatpassword=repeatpassword)
         R.save()
         return HttpResponse('data save')
     else:
