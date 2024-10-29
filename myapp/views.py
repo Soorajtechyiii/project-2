@@ -12,11 +12,15 @@ def getdata(request):
         repeatpassword=request.POST.get('psw-repeat')
         R= Register(email=text,psw=password,repeatpassword=repeatpassword)
         R.save()
-        return HttpResponse('data save')
-    else:
-        return HttpResponse('not saved')
-
-   
+        if R is not None:
+            return render(request,'save.html')
+        else:
+            return render(request,'oopop.html')
+    return HttpResponse('invalid request method')
+def save(request):
+    id=loader.get_template('save.html')
+    return HttpResponse(id.render())
+       
 
         
 
